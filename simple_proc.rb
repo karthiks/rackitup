@@ -5,3 +5,7 @@ require 'rack'
 
 #Any object responding to call({hash}) by returning [status,{headers},[body]] is good enough to be called a Rack App
 Rack::Handler::WEBrick.run proc { |env| [200, {"Content-type" => "text.html"}, ["I'm proc Rack app!"]] }, :Port => 9293
+
+#### In command prompt, run
+   # $ ruby simple_proc.rb
+#### and you are done firing up the webserver.
